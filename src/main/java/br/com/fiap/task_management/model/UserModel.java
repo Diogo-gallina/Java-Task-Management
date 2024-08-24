@@ -15,12 +15,12 @@ import java.util.List;
 @Entity
 @Table(name = "CP1_JV_2TDSS_USER")
 @EntityListeners(AuditingEntityListener.class)
-public class User {
+public class UserModel {
 
     @Id
     @GeneratedValue
     @Column(name = "user_id")
-    private Integer userId;
+    private Long userId;
 
     @Column(name = "name", nullable = false, length = 100)
     private String name;
@@ -32,6 +32,6 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "user")
-    private List<Task> tasks;
+    private List<TaskModel> tasks;
 
 }

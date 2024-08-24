@@ -12,12 +12,12 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Entity
 @Table(name = "CP1_JV_2TDSS_TASK")
 @EntityListeners(AuditingEntityListener.class)
-public class Task {
+public class TaskModel {
 
     @Id
     @GeneratedValue
     @Column(name = "task_id")
-    private Integer id;
+    private Long id;
 
     @Column(name = "title", nullable = false, length = 100)
     private String title;
@@ -30,6 +30,6 @@ public class Task {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private User user;
+    private UserModel user;
 
 }
