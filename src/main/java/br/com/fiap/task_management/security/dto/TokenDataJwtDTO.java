@@ -1,4 +1,4 @@
 package br.com.fiap.task_management.security.dto;
 
-public class TokenDataJwtDTO {
+public record TokenDataJwtDTO(String token) {
 }
