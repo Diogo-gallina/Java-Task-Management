@@ -28,7 +28,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(req -> {
                     req.requestMatchers(HttpMethod.POST, "/login").permitAll();
                     req.requestMatchers(HttpMethod.POST, "/users/signup").permitAll();
-                    req.requestMatchers(HttpMethod.POST, "/public/status:").permitAll();
+                    req.requestMatchers(HttpMethod.GET, "/public/status").permitAll();
                     req.anyRequest().authenticated(); })
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
