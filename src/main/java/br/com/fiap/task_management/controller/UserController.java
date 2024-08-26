@@ -1,7 +1,7 @@
 package br.com.fiap.task_management.controller;
 
-import br.com.fiap.task_management.dto.SignUpUserDTO;
-import br.com.fiap.task_management.dto.UserDetailsDTO;
+import br.com.fiap.task_management.dto.user.SignUpUserDTO;
+import br.com.fiap.task_management.dto.user.UserDetailsDTO;
 import br.com.fiap.task_management.model.UserModel;
 import br.com.fiap.task_management.repository.UserRepository;
 import jakarta.transaction.Transactional;
