@@ -1,4 +1,4 @@
-package br.com.fiap.task_management.dto;
+package br.com.fiap.task_management.dto.user;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
